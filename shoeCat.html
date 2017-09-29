@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shoe Catalogue</title>
+    <script type='text/javascript' src='handlebars-v4.0.5.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="jumbotron text-center">
+ <h1>...Somagies Sneaker Shopping ....</h1>
+ <p>Repeat after me... Shoes are boring, i need a new pair of sneakers!!!</p>
+</div>
+<div class="container" align="center">
+ <div class="row">
+ <div class="col-sm-4">
+ <h3>Search for Shoes</h3>
+
+<script class="dropdown" type="text/x-handlebars-template"> -----------------
+ <select>
+ <option value="" disabled selected>Select Your Option </option>
+        {{#each brand}}
+    <option>{{this}} </option>
+        {{/each}}
+    </select>
+
+
+    <select>
+        {{#each color}}
+    <option>{{this}}</option>
+        {{/each}}
+    </select>
+
+
+    <select>
+    {{#each size}}
+    <option> {{this}} </option>
+    {{/each}}
+    </select>
+
+</script>
+    </div>
+    </div>
+    <div class="show"></div>
+</div>
+
+
+
+<div class="container" align="center">
+<div class="row">
+<div class="col-sm-4">
+
+    <script id="shoesCat" type="text/x-handlebars-template">---------------
+        <h1>Stock Available</h1>
+        <table style="width:80%" id="s" align="center">
+            <tr>
+                <th> Brand Name</th>
+                <th> color </th>
+                <th>Size </th>
+                <th>price</th>
+                <th> In Stock </th>
+            </tr>
+            {{#each shoes}}
+            <tr>
+                <td>{{brand}}</td>
+                <td>{{color}}</td>
+                <td>{{size}}</td>
+                <td>R {{price}}</td>
+                <td>{{in_stock}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+    </script>
+    <div class="dropDisplay">
+        <select class="brands"></select>
+        <select class="colors"></select>
+        <select class="sizes"></select><br>
+
+
+        <input type="button" id="searchbtn" value="search" onclick="search()">
+        <input type="button" id="all" value="Show all" onclick="showAll()">
+    </div>
+
+    <div id="display"></div>
+    <hr>
+
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<div class="addStock">
+        <h1 id="h1"> Adding More Stock</h1>
+
+        <label>Brand Name :</label>
+        <input id="brandAdd" placeholder="Enter brand Name">
+
+        <br>
+        <label>Color :</label> <input id="colorAdd" placeholder="Enter Brand Color">
+
+        <br
+        <label>Size:</label> <input id="sizeAdd" placeholder="Enter Brand Size">
+
+        <br
+        <label>Price:</label> <input id="priceAdd" placeholder="Enter Brand Price">
+
+        <br
+        <label>Quantity:</label> <input id="quantityAdd" placeholder="Enter BrandQuantity">
+
+        <br>
+        <div id="error"></div>
+
+        <br>
+        <input id="enterstock" type="button" value="Add Stock" onclick="addingStock()">
+    </div>
+</div>
+</div>
+</div>
+
+</body>
+<script type="text/javascript" src="shoecat.js"></script>   ----------------------
+
+
+</html>

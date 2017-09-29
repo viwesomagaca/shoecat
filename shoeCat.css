@@ -1,0 +1,73 @@
+table, th, tr, td{
+    border: solid gray 2px;
+    border-collapse: collapse;
+    background-color:darkgray;  
+   
+}
+
+th,td{
+     align-content: center;
+     font-family: cursive;
+}
+h1{
+    font-family:"Dancing Script", cursive;
+    font-size: 75px;
+}
+
+#dropdowns{
+    align-content: center;
+}
+
+h3{
+    font-family: "Kaushan Script", cursive;
+    font-size: 30px;
+}
+
+body{
+    align-content: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+}
+
+#addStock{
+    background-color: white;
+    position: relative;
+    height: 200px;
+}
+
+select, #enterstock,#searchbtn, #all{
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+    font-family: cursive;
+    float: none;
+}
+
+#enterstock{
+    position: relative;
+    bottom: -5px;
+}
+#error{
+	float: left;
+	position: relative;
+	left: 40%;
+}
+img{
+    width: 30%;
+    height: 40%;
+    position: relative;
+    bottom: 40px;
+}
+
+label, input{
+    float: left;
+    position: relative;
+    left: 50px;
+}
+
+label{
+     float: left;
+    position: relative;
+    left :54px;
+}
