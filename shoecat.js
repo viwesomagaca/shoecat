@@ -146,23 +146,8 @@ function shoesize(input) {
 
   })
 
-    // var searched = template({
-    //      shoes : data
-    //              });
-    //        document.getElementById("display").innerHTML = searched;
-
-
-
-
 
 }
-
-
-
-
-
-
-
 
 
 function showAll(){
@@ -183,6 +168,24 @@ function showAll(){
     })
 
 };
+
+// function purchaseShoe(){
+document.getElementById("display").addEventListener("click", function(e){
+
+  var _id = e.target.id;
+  $.ajax({
+    url:"http://localhost:3006/api/shoes/sold/"+_id,
+    type: "POST",
+  }).then(function(data){
+    console.log(data);
+    var searched = template({
+         shoes : data
+             });
+ document.getElementById("display").innerHTML = searched;
+
+
+  })
+})
 
 function addingStock(){
     var addBrand = document.querySelector(".brandAdd");
@@ -212,36 +215,8 @@ function addingStock(){
                   });
 
       document.getElementById("display").innerHTML = searched;
-}
-      //  console.log(data.data + "Was Sucessfully Added!");
-
-
- //
- //    if(addBrand.value ===""){
- //    document.getElementById('error').innerHTML ="Please enter your text below";
- // }
-
-    // var brandOption = document.querySelector(".brands");
-    // var curlOpt = document.createElement("option");
-    // curlOpt.text = brandAdd.value;
-    // brandOption.add(curlOpt);
-    // brandUnique();
-    //
-    //
-    // var colorOption = document.querySelector(".colors");
-    // var anoOpt = document.createElement("option");
-    // anoOpt.text = colorAdd.value;
-    // colorOption.add(anoOpt);
-    // UniqueColor();
-    //
-    // var sizeOption = document.querySelector(".sizes");
-    // var anoOption = document.createElement("option");
-    // anoOption.text = sizeAdd.value;
-    // sizeOption.add(anoOption);
-    // UniqueSize();
- //
- // if(addBrand.value ===""){
- //    document.getElementById('error').innerHTML ="Please enter your text below";
- // }
+      console.log(data.brand);
+      document.getElementById('error').innerHTML = data.brand + "Has been added Sucessfully";
+    }
 });
 };

@@ -1,26 +1,38 @@
 table, th, tr, td{
     border: solid gray 2px;
     border-collapse: collapse;
-    background-color:darkgray;  
-   
+    background-color:darkgray;
+    align-content: center;
+    font-family: cursive;
+
 }
 
-th,td{
+
+td{
      align-content: center;
      font-family: cursive;
+     background-color:Lightgray;
 }
 h1{
     font-family:"Dancing Script", cursive;
     font-size: 75px;
 }
 
+.dropDisplay{
+  position: relative;
+  top: -4em;
+}
 #dropdowns{
     align-content: center;
+    position: relative;
+    top: -3em;
 }
 
 h3{
     font-family: "Kaushan Script", cursive;
     font-size: 30px;
+    position: relative;
+    top: -3em;
 }
 
 body{
