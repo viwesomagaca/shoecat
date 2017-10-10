@@ -6,7 +6,9 @@ table, th, tr, td{
     font-family: cursive;
 
 }
-
+/*.dropDisplay{
+  background-color: beige;
+}*/
 
 td{
      align-content: center;
@@ -15,24 +17,25 @@ td{
 }
 h1{
     font-family:"Dancing Script", cursive;
-    font-size: 75px;
+    font-size: 50px;
 }
 
-.dropDisplay{
-  position: relative;
-  top: -4em;
-}
-#dropdowns{
-    align-content: center;
-    position: relative;
-    top: -3em;
-}
+/*.addStock{
+  background-color: pink;
+  margin-left: 50%;
+  position: absolute;
+  top: 8em;
+  align-content: center;
+}*/
 
 h3{
     font-family: "Kaushan Script", cursive;
-    font-size: 30px;
+    font-size: 20px;
     position: relative;
-    top: -3em;
+
+}
+.row{
+  margin-left: 3em;
 }
 
 body{
@@ -46,12 +49,16 @@ body{
     background-color: white;
     position: relative;
     height: 200px;
+    /*background-color: lightblue;*/
 }
-
+.container{
+  /*background-color: lavender;*/
+  margin-right: 50%;
+}
 select, #enterstock,#searchbtn, #all{
-    width: 250px;
-    height: 40px;
-    font-size: 17px;
+    width: 12em;
+    height: 3em;
+    font-size: 14px;
     font-family: cursive;
     float: none;
 }
@@ -61,18 +68,19 @@ select, #enterstock,#searchbtn, #all{
     bottom: -5px;
 }
 #error{
-	float: left;
-	position: relative;
-	left: 40%;
-}
-img{
-    width: 30%;
-    height: 40%;
-    position: relative;
-    bottom: 40px;
+  background-color: green;
 }
 
-label, input{
+img{
+    width: 15em;
+    height: 7em;
+    position relative;
+}
+
+input{
+  text-transform: capitalize;
+}
+/*label, input{
     float: left;
     position: relative;
     left: 50px;
@@ -82,4 +90,4 @@ label{
      float: left;
     position: relative;
     left :54px;
-}
+}*/
