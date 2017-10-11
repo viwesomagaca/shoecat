@@ -20,18 +20,15 @@ h1{
     font-size: 50px;
 }
 
-/*.addStock{
-  background-color: pink;
-  margin-left: 50%;
-  position: absolute;
-  top: 8em;
-  align-content: center;
-}*/
+form{
+  position: fixed;
+  align-self: center;
+  align-items: center;
+}
 
 h3{
     font-family: "Kaushan Script", cursive;
-    font-size: 20px;
-    position: relative;
+    font-size: 30px;
 
 }
 .row{
@@ -47,8 +44,8 @@ body{
 
 #addStock{
     background-color: white;
-    position: relative;
-    height: 200px;
+    /*position: relative;*/
+    /*height: 200px;*/
     /*background-color: lightblue;*/
 }
 .container{
@@ -63,23 +60,10 @@ select, #enterstock,#searchbtn, #all{
     float: none;
 }
 
-#enterstock{
-    position: relative;
-    bottom: -5px;
-}
 #error{
   background-color: green;
 }
 
-img{
-    width: 15em;
-    height: 7em;
-    position relative;
-}
-
-input{
-  text-transform: capitalize;
-}
 /*label, input{
     float: left;
     position: relative;
