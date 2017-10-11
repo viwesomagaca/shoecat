@@ -39,16 +39,14 @@ h3{
 }
 
 body{
-    align-content: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-blend-mode:soft-light;
+
 }
 
 #addStock{
+  margin-left: 4em;
     background-color: white;
-    position: relative;
-    height: 200px;
+     align-self: center;
+     align-content: center;
     /*background-color: lightblue;*/
 }
 .container{
@@ -67,8 +65,8 @@ select, #enterstock,#searchbtn, #all{
     position: relative;
     bottom: -5px;
 }
-#error{
-  background-color: green;
+.col-sm-9{
+  margin-left: 7em;
 }
 
 img{
